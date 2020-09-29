@@ -13077,8 +13077,33 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Milestone-1:-CMPS-3160">Milestone 1: CMPS 3160<a class="anchor-link" href="#Milestone-1:-CMPS-3160">&#182;</a></h1><p>The following notebook is in conjunction with Prof. Mattei's Data Science class at Tulane University</p>
-<h2 id="Cleaning-Data-for-Use-in-Further-Milestones">Cleaning Data for Use in Further Milestones<a class="anchor-link" href="#Cleaning-Data-for-Use-in-Further-Milestones">&#182;</a></h2><p>The goal of the program found in this notebook is to clean NFL Play by Play Data retrieved in .csv form at <a href="https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016">https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016</a> for use in my final project. In its current form, my final project will be to analyze 3rd Down plays in order to decide the best course of action in these situations.</p>
+<p>This notebook can be found in html form at <a href="https://sbruchhaus.github.io/">https://sbruchhaus.github.io/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Milestone-1:-CMPS-3160">Milestone 1: CMPS 3160<a class="anchor-link" href="#Milestone-1:-CMPS-3160">&#182;</a></h1><p>Hi, my name is Sam Bruchhaus. As someone who is currently pursuing a career in Sports Analytics, I am excited to finally get the opportunity to flesh out a full-length project. Though I have worked on several smaller projects, namely an NFL Draft Quarterback Performance Predictor and an NBA Salary Predictor, this will be my first project using generally accepted data science techniques and tools I have learned in CMPS 3160 at Tulane University.</p>
+<p>The goal of this project is to explore NFL Play-By-Play Data. More specifically, the possible research questions for this project can be broken down into three major question types, all of which deal with play-calling decisions on third down:</p>
+<ul>
+<li>“3rd and Medium”: On 3rd Downs with a distance of 4 yards, 5 yards, or 6 yards (also known as “3rd and Medium”), are run plays or pass plays more efficient? Does this vary by team? If so, is there some pattern that governs which teams are better at passing versus running?</li>
+<li>“Playing for 4th and Short”: On 3rd Downs with a distance of greater than 3 yards, do teams tend to go for the 1st down or play for a manageable 4th down? What factors determine this strategy? Is this a viable strategy in any case? </li>
+<li>“3rd Down in the Hot Zone”: For the purposes of this project, the “Hot Zone” will be defined as plays run from the 3-Yard Line to the 10-Yard Line going in to score a touchdown. On 3rd Downs in this area, do teams tend to go for the touchdown or get closer to the goal line? How does this decision-making change at the end of close games? Are there any patterns on how this decision has been managed in past years?</li>
+</ul>
+<p>Using a .csv file called “Detailed NFL Play-by-Play Data 2009-2018” (link below) created using a package called nflscrapR and posted on Kaggle, I will be able to provide insight into some of these questions. More information on the data including the current capabilities and future possibilities can be found below. As of now, I do not believe that I will need more data, as this dataset is quite diverse and detailed. However, I am open to using more data if need be.</p>
+<p>I plan to work on this project alone. The reasoning for this is two-fold. First, I want to use this as an opportunity to build my analytical knowledge of the football. I currently play football at Tulane, so I have a solid background of practical knowledge and best practices from experience. However, I was worried that if I partnered with others, my role would primarily be to lend credence or caution to the findings of this project based on my past experiences. In order to ensure that I am primarily a data scientist and secondarily a football player, I am working alone. Second, I would like to use this project as a sample for job applications in sports. Because I know sports organizations are very thorough in their research, I wanted to make sure that the organizations know that I am capable of all the work contained in this project, and that I did not specialize in one part or another.</p>
+<p>I plan to complete this project using jupyter notebooks with a possible addition of some better visualization services. All updates will be posted to sbruchhaus.github.io. Any questions can be directed to sbruchhaus@tulane.edu.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cleaning-Data-for-Use-in-Further-Milestones">Cleaning Data for Use in Further Milestones<a class="anchor-link" href="#Cleaning-Data-for-Use-in-Further-Milestones">&#182;</a></h2><p>Data for this project can be found in .csv at <a href="https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016">https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016</a>.</p>
+<p>For the purposes of this milestone, I used the v5 version found on the webpage. The size of the file is quite large, so users looking to replicate this program need to download the file and unzip it in the necessary repository.</p>
 
 </div>
 </div>
@@ -21232,7 +21257,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Column-headers-are-variable-names,-not-values.">Column headers are variable names, not values.<a class="anchor-link" href="#Column-headers-are-variable-names,-not-values.">&#182;</a></h3><p>There do not appear to be any Column headers that are values. All describe the play in some way.</p>
+<h3 id="Column-headers-are-variable-names,-not-values.">Column headers are variable names, not values.<a class="anchor-link" href="#Column-headers-are-variable-names,-not-values.">&#182;</a></h3><p>There does not appear to be any column headers that are values. All describe the play in some way.</p>
 
 </div>
 </div>
@@ -21240,7 +21265,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Multiple-variables-are-not-stored-in-one-column.">Multiple variables are not stored in one column.<a class="anchor-link" href="#Multiple-variables-are-not-stored-in-one-column.">&#182;</a></h3><p>There appear to be a few relevant columns in which multiple variables are stored in a column. Below is the code to remove the following:</p>
+<h3 id="Multiple-variables-are-not-stored-in-one-column.">Multiple variables are not stored in one column.<a class="anchor-link" href="#Multiple-variables-are-not-stored-in-one-column.">&#182;</a></h3><p>There appear to be one column in which multiple variables are stored in a column. Below is the code to remove the following:</p>
 <p>yrdln: Contains both Qualitative Data (which team's side of the field) and Quantitative Data (The Yardline)</p>
 
 </div>
@@ -21270,7 +21295,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Multiple-types-of-observational-units-are-not-stored-in-the-same-table">Multiple types of observational units are not stored in the same table<a class="anchor-link" href="#Multiple-types-of-observational-units-are-not-stored-in-the-same-table">&#182;</a></h3><p>The initial data does a poor job of seperating tables by observational unit. There are four major types of data in this table. For the current iteration of the project goal, three types of data exist.</p>
+<h3 id="Multiple-types-of-observational-units-are-not-stored-in-the-same-table">Multiple types of observational units are not stored in the same table<a class="anchor-link" href="#Multiple-types-of-observational-units-are-not-stored-in-the-same-table">&#182;</a></h3><p>The initial data does a poor job of seperating tables by observational unit. There are three major types of data in this table that we plan to use.</p>
 <p>Qualitative Descriptors -- can apply to play_ids, game_ids, and play_types</p>
 <p>Quantative Descriptors in a set -- really only apply to play_ids</p>
 <p>Quantitative Values not in a set -- best describe play_ids and play_types</p>
@@ -21292,7 +21317,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First, Find all Qualitative Descriptors regarding the Play</span>
-<span class="n">qual_play</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;game_id&quot;</span><span class="p">,</span> <span class="s2">&quot;posteam&quot;</span><span class="p">,</span> <span class="s2">&quot;posteam_type&quot;</span><span class="p">,</span> <span class="s2">&quot;defteam&quot;</span><span class="p">,</span> <span class="s2">&quot;side_of_field&quot;</span><span class="p">,</span> <span class="s2">&quot;game_half&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">]]</span>
+<span class="n">qual_play</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;game_id&quot;</span><span class="p">,</span> <span class="s2">&quot;posteam&quot;</span><span class="p">,</span> <span class="s2">&quot;posteam_type&quot;</span><span class="p">,</span> <span class="s2">&quot;defteam&quot;</span><span class="p">,</span> <span class="s2">&quot;side_of_field&quot;</span><span class="p">,</span> <span class="s2">&quot;game_half&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;play_type&quot;</span><span class="p">]]</span>
 <span class="n">qual_play</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">qual_play</span>
 </pre></div>
@@ -21338,6 +21363,7 @@ div#notebook {
       <th>side_of_field</th>
       <th>game_half</th>
       <th>time</th>
+      <th>play_type</th>
     </tr>
   </thead>
   <tbody>
@@ -21351,6 +21377,7 @@ div#notebook {
       <td>PIT</td>
       <td>Half1</td>
       <td>13:35</td>
+      <td>pass</td>
     </tr>
     <tr>
       <td>1</td>
@@ -21362,6 +21389,7 @@ div#notebook {
       <td>TEN</td>
       <td>Half1</td>
       <td>12:11</td>
+      <td>run</td>
     </tr>
     <tr>
       <td>2</td>
@@ -21373,6 +21401,7 @@ div#notebook {
       <td>TEN</td>
       <td>Half1</td>
       <td>09:01</td>
+      <td>pass</td>
     </tr>
     <tr>
       <td>3</td>
@@ -21384,6 +21413,7 @@ div#notebook {
       <td>PIT</td>
       <td>Half1</td>
       <td>06:52</td>
+      <td>pass</td>
     </tr>
     <tr>
       <td>4</td>
@@ -21395,8 +21425,10 @@ div#notebook {
       <td>PIT</td>
       <td>Half1</td>
       <td>05:27</td>
+      <td>pass</td>
     </tr>
     <tr>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -21417,6 +21449,7 @@ div#notebook {
       <td>NO</td>
       <td>Half2</td>
       <td>07:21:00</td>
+      <td>pass</td>
     </tr>
     <tr>
       <td>73927</td>
@@ -21428,6 +21461,7 @@ div#notebook {
       <td>CAR</td>
       <td>Half2</td>
       <td>02:47:00</td>
+      <td>pass</td>
     </tr>
     <tr>
       <td>73928</td>
@@ -21439,6 +21473,7 @@ div#notebook {
       <td>CAR</td>
       <td>Half2</td>
       <td>01:51:00</td>
+      <td>run</td>
     </tr>
     <tr>
       <td>73929</td>
@@ -21450,6 +21485,7 @@ div#notebook {
       <td>CAR</td>
       <td>Half2</td>
       <td>01:17:00</td>
+      <td>pass</td>
     </tr>
     <tr>
       <td>73930</td>
@@ -21461,10 +21497,11 @@ div#notebook {
       <td>CAR</td>
       <td>Half2</td>
       <td>00:58:00</td>
+      <td>pass</td>
     </tr>
   </tbody>
 </table>
-<p>73931 rows × 8 columns</p>
+<p>73931 rows × 9 columns</p>
 </div>
 </div>
 
@@ -21625,7 +21662,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Qualitative-Descriptor-Tables-Filtered-By-Play-Type">Qualitative Descriptor Tables Filtered By Play Type<a class="anchor-link" href="#Qualitative-Descriptor-Tables-Filtered-By-Play-Type">&#182;</a></h4><p>The following tables include tables which have data specific to a certain play type. For the purposes of the initial goal of this project, which is to evaluate run or pass on 3rd and Medium, we can filter out all options that are not runs and pass. Thus, we will have two dataframes: one of runs and one of passes</p>
+<h4 id="Qualitative-Descriptor-Tables-Filtered-By-Play-Type">Qualitative Descriptor Tables Filtered By Play Type<a class="anchor-link" href="#Qualitative-Descriptor-Tables-Filtered-By-Play-Type">&#182;</a></h4><p>The following tables include tables which have data specific to a certain play type. For the purposes of the initial goal of this project, which is to evaluate run or pass play-calls on 3rd Down, we can filter out all options that are not runs and pass. Thus, we will have two dataframes: one of runs and one of passes</p>
 
 </div>
 </div>
@@ -21635,11 +21672,15 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">qual_passes</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[</span><span class="n">third_downs_clean</span><span class="o">.</span><span class="n">play_type</span> <span class="o">==</span> <span class="s2">&quot;pass&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter out all non-passes</span>
+<span class="n">qual_passes</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[</span><span class="n">third_downs_clean</span><span class="o">.</span><span class="n">play_type</span> <span class="o">==</span> <span class="s2">&quot;pass&quot;</span><span class="p">]</span>
 
+<span class="c1"># assign relevant variables</span>
 <span class="n">qual_passes</span> <span class="o">=</span> <span class="n">qual_passes</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;pass_length&quot;</span><span class="p">,</span> <span class="s2">&quot;pass_location&quot;</span><span class="p">]]</span>
+
 <span class="c1"># We want to fillna with none because no pass length or location is still important to our analysis</span>
 <span class="n">qual_passes</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 <span class="n">qual_passes</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">qual_passes</span>
@@ -21767,12 +21808,18 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">qual_runs</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[</span><span class="n">third_downs_clean</span><span class="o">.</span><span class="n">play_type</span> <span class="o">==</span> <span class="s2">&quot;run&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># filter out all non-runs</span>
+<span class="n">qual_runs</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[</span><span class="n">third_downs_clean</span><span class="o">.</span><span class="n">play_type</span> <span class="o">==</span> <span class="s2">&quot;run&quot;</span><span class="p">]</span>
+
+<span class="c1"># assign relevant variables</span>
 <span class="n">qual_runs</span> <span class="o">=</span> <span class="n">qual_runs</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;run_location&quot;</span><span class="p">,</span> <span class="s2">&quot;run_gap&quot;</span><span class="p">]]</span>
+
 <span class="c1"># After inspection of the data, it is clear that the NaNs for run_gap correlate with an &quot;off-center&quot; or A-Gap run.</span>
 <span class="c1"># To keep with the scheme introduced in run_gap, all NaNs are replaced with &quot;center&quot;</span>
 <span class="n">qual_runs</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 <span class="n">qual_runs</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 <span class="n">qual_runs</span>
 </pre></div>
 
@@ -21906,7 +21953,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quant_des_play</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;qtr&quot;</span><span class="p">,</span> <span class="s2">&quot;drive&quot;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># assign relevant variables</span>
+<span class="n">quant_des_play</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;qtr&quot;</span><span class="p">,</span> <span class="s2">&quot;drive&quot;</span><span class="p">]]</span>
+
 <span class="n">quant_des_play</span>
 </pre></div>
 
@@ -22040,9 +22089,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">values_play</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;yardline_100&quot;</span><span class="p">,</span> <span class="s2">&quot;quarter_seconds_remaining&quot;</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># assign relevant variables</span>
+<span class="n">values_play</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;yardline_100&quot;</span><span class="p">,</span> <span class="s2">&quot;quarter_seconds_remaining&quot;</span><span class="p">,</span>
                                  <span class="s2">&quot;half_seconds_remaining&quot;</span><span class="p">,</span> <span class="s2">&quot;game_seconds_remaining&quot;</span><span class="p">,</span> <span class="s2">&quot;ydstogo&quot;</span><span class="p">,</span> <span class="s2">&quot;ydsnet&quot;</span><span class="p">,</span>
                                 <span class="s2">&quot;total_home_score&quot;</span><span class="p">,</span> <span class="s2">&quot;total_away_score&quot;</span><span class="p">]]</span>
+
 <span class="n">values_play</span>
 </pre></div>
 
@@ -22248,11 +22299,15 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">values_passes</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[</span><span class="n">third_downs_clean</span><span class="o">.</span><span class="n">play_type</span> <span class="o">==</span> <span class="s2">&quot;pass&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># filter out all non-passes</span>
+<span class="n">values_passes</span> <span class="o">=</span> <span class="n">third_downs_clean</span><span class="p">[</span><span class="n">third_downs_clean</span><span class="o">.</span><span class="n">play_type</span> <span class="o">==</span> <span class="s2">&quot;pass&quot;</span><span class="p">]</span>
 
+<span class="c1"># assign relevant variables</span>
 <span class="n">values_passes</span> <span class="o">=</span> <span class="n">values_passes</span><span class="p">[[</span><span class="s2">&quot;play_id&quot;</span><span class="p">,</span> <span class="s2">&quot;air_yards&quot;</span><span class="p">,</span> <span class="s2">&quot;yards_after_catch&quot;</span><span class="p">]]</span>
-<span class="c1"># We want to fillna with 0, because as similar to above, it is significant that there were not air yards or yac</span>
+
+<span class="c1"># We want to fillna with 0, because as similar to above, it is significant that there were no air yards or yac</span>
 <span class="n">values_passes</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 <span class="n">values_passes</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">values_passes</span>
@@ -22378,7 +22433,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Interestingly, there are no values specific to runs.</p>
+<p><strong>Interestingly, there are no values specific to runs.</strong></p>
 
 </div>
 </div>
@@ -22394,14 +22449,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Checking-overarching-Tidy-Data-Principles-to-ensure-tidiness">Checking overarching Tidy Data Principles to ensure tidiness<a class="anchor-link" href="#Checking-overarching-Tidy-Data-Principles-to-ensure-tidiness">&#182;</a></h2><ol>
-<li>Each variable forms a column and contains values - Yes, all variables are overarching measurements/attributes and are stored in columns. Each has a value which is a specific measurement or attribute.</li>
+<h2 id="Checking-Overarching-Tidy-Data-Principles-to-Ensure-Tidiness">Checking Overarching Tidy Data Principles to Ensure Tidiness<a class="anchor-link" href="#Checking-Overarching-Tidy-Data-Principles-to-Ensure-Tidiness">&#182;</a></h2><ol>
+<li><strong>Each variable forms a column and contains values</strong> -- Yes, all variables are overarching measurements/attributes and are stored in columns. Each has values which are specific measurements or attributes.</li>
 </ol>
 <ol>
-<li>Each observation forms a row -- Yes, in each table save for "qual_game", the individual play is the observation that forms the row. "qual_game" is an extension of qual_play. It contains data regarding each indvidual game, and it it the game is the observation.</li>
+<li><strong>Each observation forms a row</strong> -- Yes, in each table other than "qual_game", the individual play is the observation that forms the row. "qual_game" is an extension of qual_play. It contains data regarding each indvidual game, and the game is the observation.</li>
 </ol>
 <ol>
-<li>Each type of observational unit forms a table - Yes. The Observational Units are as follows.<ul>
+<li><strong>Each type of observational unit forms a table</strong> -- Yes. The observational units are as follows:<ul>
 <li>qual_play, qual_game, qual_passes, qual_runs = Qualitative, Categorical Objects</li>
 <li>quant_des_play = Quantitative, Discrete Data</li>
 <li>values_play, values_passes = Quantitative, Continuous Data</li>
@@ -22415,7 +22470,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Analyzing-Capabilities-of-Current-Data">Analyzing Capabilities of Current Data<a class="anchor-link" href="#Analyzing-Capabilities-of-Current-Data">&#182;</a></h2><p>The data is currently ready to do the following actions which are necessary to completing my end goal.</p>
+<h2 id="Analyzing-Capabilities-of-Current-Data">Analyzing Capabilities of Current Data<a class="anchor-link" href="#Analyzing-Capabilities-of-Current-Data">&#182;</a></h2><p>The data is currently ready to do the following actions which are necessary to answering the questions posited above.</p>
 <ul>
 <li><p>Seperate data by date, team, field positioning, timing, play type whether run or pass, and distance from the first down marker.</p>
 </li>
@@ -22437,7 +22492,7 @@ div#notebook {
 </li>
 <li><p>There seems to be a lack of descriptors for runs. While this could be due to the more simplistic nature of the running game, I would like to see if I could somehow get a better picture of what is occuring on run plays in my dataset.</p>
 </li>
-<li><p>The raw data also included a number of binary play descriptors unique to certain play_types. However, the data was fraught with NaN values in a pattern that I could not ascertain easily, unlike some NaN patterns as mentioned above. While I could find these values myself using the data above, I would like to attempt to tidy these up, as I think they could make my analysis easier.</p>
+<li><p>The raw data also included a number of binary play descriptors unique to certain play_types. However, the data was fraught with NaN values in a pattern that I could not understand within the scope of this milestone (unlike some NaN patterns as mentioned above). While I could find these values myself using the data above, I would like to attempt to tidy these up, as I think they could make my analysis easier.</p>
 </li>
 </ul>
 
